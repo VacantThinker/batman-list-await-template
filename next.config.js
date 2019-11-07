@@ -11,8 +11,11 @@ console.log('loading ... ... ... next.config.js')
 module.exports = {
   assetPrefix: backend_url,
   exportPathMap: async function() {
+    // / /index /index.html 部署至 github page
     const paths = {
-      '/': { page: '/' },
+      '/': { page: '/index' },
+      '/index': { page: '/index' },
+      '/index.html': { page: '/index' },
       '/about': { page: '/about' }
     }
     // const item = localforage.getItem(key_shows, ((err, value) => {
