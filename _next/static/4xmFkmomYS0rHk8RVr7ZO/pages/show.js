@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{"fF+k":function(n,t,i){(window.__NEXT_P=window.__NEXT_P||[]).push(["/show",function(){return i("im1N")}])},im1N:function(n,t,i){"use strict";i.r(t),i.d(t,"default",function(){return e});var u=i("q1tI"),o=i.n(u).a.createElement;function e(){return o("div",null)}}},[["fF+k",1,0]]]);
