@@ -13,8 +13,12 @@ class Post extends React.Component {
     // const show = urlRes.data
 
     const shows = json.map(entry => entry.show)
-    const show = shows.find((value, index) => value.id == id)
+    const showTemp = shows.find((value, index) => value.id == id)
     // console.log(show)
+    const show = {}
+    show.name = showTemp.name
+    show.summary = showTemp.summary
+    show.image = showTemp.image
 
     return { show }
   }

@@ -1,9 +1,8 @@
 import React from 'react'
 import WrapLayout from '../components/WrapLayout'
 import PrefixedLink from '../components/PrefixedLink'
-// import fetch from 'isomorphic-unfetch'
+
 const axios = require('axios')
-// const jsonData = require('../_data/batman')
 const { json } = require('../_lib/dataJson')
 
 class Index extends React.Component {
@@ -13,7 +12,15 @@ class Index extends React.Component {
     // const data = urlRes.data
     // const shows = data.map(entry => entry.show)
 
-    const shows = json.map(entry => entry.show)
+    const shows = []
+    // const showsArr = json.map(entry => entry.show)
+    json.forEach((entry, index) => {
+      const tempShow = entry.show
+      const tempVal = {}
+      tempVal.id = tempShow.id
+      tempVal.name = tempShow.name
+      shows[index] = tempVal
+    })
 
     return { shows }
   }

@@ -1,7 +1,7 @@
 const isProduction = process.env.NODE_ENV === 'production'
 
-// const hostUrl = ''
-const hostUrl = '/batman-list-await-template'
+const hostUrl = ''
+// const hostUrl = '/batman-list-await-template'
 
 const backend_url = isProduction ? hostUrl : ''
 
